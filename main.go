@@ -1,6 +1,9 @@
 package main
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/gofiber/fiber/v2"
+)
 
 func main() {
 	web := fiber.New()
@@ -10,6 +13,5 @@ func main() {
 			"message": "Hello World",
 		})
 	})
-
-	web.Server()
+	lambda.Start(web)
 }

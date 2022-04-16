@@ -11,5 +11,5 @@ func main() {
 		})
 	})
 
-	web.Listen(":8080")
+	web.Server()
 }

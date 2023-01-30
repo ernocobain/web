@@ -12,6 +12,7 @@ func MainSrc() {
 		Views:       engine,
 		ViewsLayout: "layouts/main",
 	})
+	app.Static("/", "./public/static")
 	routes.RoutesHtml(app)
 
 	app.Listen(":8080")

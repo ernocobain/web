@@ -5,8 +5,8 @@ import "github.com/gofiber/fiber/v2"
 // Handlers home started code
 
 func HandlerHome(h *fiber.Ctx) error {
-	return h.JSON(fiber.Map{
-		"welcome": "Hello World",
+	return h.Render("pages/home/index", fiber.Map{
+		"title": "Hello world",
 	})
 }
 

@@ -2,7 +2,10 @@ module dhikrama.com/web
 
 go 1.19
 
-require github.com/gofiber/fiber/v2 v2.41.0
+require (
+	github.com/gofiber/fiber/v2 v2.41.0
+	github.com/gofiber/template v1.7.4
+)
 
 require (
 	github.com/andybalholm/brotli v1.0.4 // indirect

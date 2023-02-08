@@ -521,18 +521,6 @@ video {
   display: inline;
 }
 
-h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  letter-spacing: -0.05em;
-}
-
-p {
-  margin-bottom: 0.5rem;
-  font-size: 16px;
-}
-
-body {
+.p-2 {
   padding: 0.5rem;
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }

@@ -14,6 +14,7 @@ func MainSrc() {
 	})
 	app.Static("/", "./public/static")
 	routes.RoutesHtml(app)
+	routes.RoutersApi(app)
 
 	app.Listen(":8080")
 }

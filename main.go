@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	database.ConnectDB()
 	src.MainSrc()
+	database.ConnectDB()
 }

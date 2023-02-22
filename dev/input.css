@@ -3,15 +3,43 @@
 @tailwind utilities;
 
 
-@layer base{
-    html{
+@layer base {
+    html {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    h2{
+
+    h2 {
         @apply md:text-[2rem] text-[1.3rem]
     }
 
-    p{
+    p {
         @apply text-gray-700
+    }
+}
+
+/* header  tailwindcss start*/
+
+
+header {
+    @apply flex justify-between justify-items-center;
+    @layer base{
+        nav{
+            @apply absolute top-0 right-1 h-full w-[70%] bg-gray-50 overflow-y-visible
+            p-4 z-10
+        }
+        .hamburger{
+            @apply w-7 h-1 bg-gray-800;
+            @layer base{
+                .active:nth-child(1){
+                     @apply rotate-[38deg] origin-top-left
+                 }
+                 .active:nth-child(2){
+                     @apply scale-0 origin-center
+                 }
+                 .active:nth-child(3){
+                     @apply -rotate-[37deg] origin-bottom-left
+                 }
+            }
+        }
     }
 }
